@@ -1,0 +1,65 @@
+# Test Plan: Membership Checkout Flow (Web Application)
+
+## Objective
+Validate that users can successfully purchase a membership without errors across supported browsers and devices.
+
+---
+
+## Scope
+
+### In Scope
+- User login
+- Membership selection
+- Checkout flow
+- Payment processing
+- Confirmation screen
+- Email confirmation trigger
+
+### Out of Scope
+- Admin dashboard
+- Marketing pages
+- Backend payment provider internals
+
+---
+
+## Test Types
+- Functional Testing
+- Regression Testing
+- Exploratory Testing
+- Cross-browser Testing
+- Negative Testing
+
+---
+
+## Test Scenarios
+
+### Functional
+- User can log in successfully
+- User can view available membership options
+- User can complete checkout with valid payment info
+- Confirmation screen displays correct purchase details
+
+### Negative
+- Invalid credit card is rejected
+- Expired session during checkout
+- Missing required fields in checkout form
+- Network interruption during payment submission
+
+### Edge Cases
+- Double-click submit on payment button
+- Browser refresh during checkout
+- Switching tabs mid-transaction
+
+---
+
+## Test Data
+- Valid user account
+- Valid test credit card
+- Invalid card numbers (declined, expired)
+
+---
+
+## Exit Criteria
+- No P0/P1 defects open
+- Payment flow successfully completes across supported browsers
+- Confirmation email reliably triggered
